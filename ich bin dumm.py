@@ -1,0 +1,2 @@
+class Emplyee:
+    pass
