@@ -11,23 +11,24 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard_app/style.css' %}">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="sidebar">
             <h2>Sidebar</h2>
-            <li><a href=""><i data-feahter="home"></i>Dashboard</a></li>
-            <li><a href=""><i data-feahter="user"></i>Users</a></li>
-            <li><a href=""><i data-feahter="calendar"></i>Calendar</a></li>
-            <li><a href=""><i data-feahter="list"></i>Orders</a></li>
-            <li><a href=""><i data-feahter="sliders"></i>Settings</a></li>
-            <li><a href=""><i data-feahter="log-out"></i>Logout</a></li>
+            <ul>
+                <li><a href=""><i data-feather="home"></i>&nbsp;Dashboard</a></li>
+                <li><a href=""><i data-feather="user"></i>&nbsp;Users</a></li>
+                <li><a href=""><i data-feather="calendar"></i>&nbsp;Calendar</a></li>
+                <li><a href=""><i data-feather="list"></i>&nbsp;Orders</a></li>
+                <li><a href=""><i data-feather="sliders"></i>&nbsp;Settings</a></li>
+                <li><a href=""><i data-feather="log-out"></i>&nbsp;Logout</a></li>
+            </ul>
         </div>
     </div>
     <div class="main_content">
-        ...
     </div>
 
     <script>
