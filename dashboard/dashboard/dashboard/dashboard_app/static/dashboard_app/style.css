@@ -8,6 +8,18 @@
     font-family: 'Baloo 2', cursive;
 }
 
+<<<<<<< HEAD
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: black;
+=======
 .wrapper{
     position: relative;
     display: flex;
@@ -37,4 +49,5 @@
 .wrapper .sidebar ul li a{
     color: white;
     display: block;
+>>>>>>> 997a40ddc83190f9620e79f7e2820782b09c3ee3
 }
