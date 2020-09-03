@@ -1,0 +1,27 @@
+{% extends 'navbar.html' %} {% block body %}
+
+<div class="container mt-4">
+
+    {% if request.path == '/add_basen'%}
+    <h2>Base zu Sammlung hinzufügen</h2>
+    <br> {% endif %} {% if request.path == '/add_saeuren'%}
+    <h2>Säure zu Sammlung hinzufügen</h2>
+    <br> {% endif %} {% if request.path == '/add_metalle'%}
+    <h2>Metall zu Sammlung hinzufügen</h2>
+    <br> {% endif %}
+
+    <form method="POST">
+
+        {% csrf_token %} {% for field in form%}
+        <div class="form-group">
+            <label for="if_{{ field.name }}">{{ field.label }}</label> {{ field }}
+        </div>
+        {% endfor %}
+
+        <button class="btn btn-dark mt-3">Zur Sammlung Hinzufügen</button>
+
+    </form>
+
+</div>
+
+{% endblock %}

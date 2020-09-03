@@ -117,3 +117,7 @@ def getdate(text):
     
     return datetime.date(month=month,day=day,year=year)
 
+
+speak("hello, bastard")
+text = getaudio()
+speak(text)
